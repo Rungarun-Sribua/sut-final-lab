@@ -12,7 +12,7 @@ func TestBookPriceValidate(t *testing.T) {
 		book   Book
 		expect string
 	}{
-		{"Valid_name", Book{Title: "ThePartyIsOver", Price: 10.00, Code: "BK123456"}, ""},
+		{"Valid_name", Book{Title: "ThePartyIsOver", Price: 10.00, Code: "BK123456"}, "Price must be between 50 and 5000"},
 	}
 
 	g := NewGomegaWithT(t)
